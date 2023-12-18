@@ -105,8 +105,8 @@ fun DetailsScreenPreview(){
            author = "",
            title = "Where Does Crypto Go From Here?",
            description = "We talk with Michael Casey, the chief content officer of CoinDesk, almost one year after the news site brought down Sam Bankman-Fried’s cryptocurrency empire FTX",
-           content = "Gideon Lichfield: You said just now that what Sam Bankman-Fried did was allegedly illegal. Is there a world in which it wasn't illegal?\\r\\nMichael Casey: I think we allI know. I'm trying to be a good j… [+2082 chars]",
-           publishedAt = "2023-06-16T22:24:332",
+           content = "Gideon Lichfield: You said just now that what Sam Bankman-Fried did was allegedly illegal. Is there a world in which it wasn't illegal?",
+           publishedAt = "2023-12-12",
            source = Source(
                id="", name="bbc"
            ),

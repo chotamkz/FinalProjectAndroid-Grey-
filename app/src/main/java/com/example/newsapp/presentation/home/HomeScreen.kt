@@ -36,19 +36,7 @@ import com.example.newsapp.presentation.onboarding.Dimens.MediumPadding1
 fun HomeScreen(articles: LazyPagingItems<Article>,
                navigateToSearch: ()-> Unit,
                navigateToDetails:(Article)-> Unit) {
-    val titles by remember {
-        derivedStateOf {
-            if (articles.itemCount > 10) {
-                articles.itemSnapshotList.items
-                    .slice(IntRange(start = 0, endInclusive = 9))
-                    .joinToString(separator = " \uD83d\uDFE5 ") {
-                        it.title
-                    }
-            } else {
-                ""
-            }
-        }
-    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -74,17 +62,7 @@ fun HomeScreen(articles: LazyPagingItems<Article>,
             },
             onSearch = {}
         )
-        Spacer(modifier = Modifier.height(MediumPadding1))
 
-        Text(
-            text = titles, modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = MediumPadding1)
-                .basicMarquee(),
-            fontSize = 12.sp,
-            color = colorResource(id = R.color.placeholder)
-
-        )
         Spacer(modifier = Modifier.height(MediumPadding1))
 
         ArticlesList(
