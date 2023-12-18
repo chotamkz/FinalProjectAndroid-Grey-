@@ -27,3 +27,18 @@ fun NewsButton(
         )
     }
 }
+@Composable
+fun NewsTextButton(
+    text : String,
+    onClick: () -> Unit
+) {
+    TextButton(onClick = onClick) {
+
+        Text(
+            text = text,
+            style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.Bold),
+            color = Color.DarkGray
+        )
+
+    }
+}
