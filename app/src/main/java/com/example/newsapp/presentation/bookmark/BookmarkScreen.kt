@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import com.example.newsapp.R
 import com.example.newsapp.domain.model.Article
 import com.example.newsapp.presentation.common.ArticlesList
+import com.example.newsapp.presentation.navgraph.Route
 import com.example.newsapp.presentation.onboarding.Dimens.MediumPadding1
 
 @Composable
@@ -37,8 +38,8 @@ fun BookmarkScreen(
 
 
         Spacer(modifier = Modifier.height(MediumPadding1))
-
-
+        
+        
         ArticlesList(articles = state.article, onClick = {navigateToDetails(it)})
 
 
